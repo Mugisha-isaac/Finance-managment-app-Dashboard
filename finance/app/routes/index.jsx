@@ -4,14 +4,14 @@ import Contents from "../compoents/contents"
 
 export default function Index() {
   return (
-    <div className="bg-primary w-full h-fit drop-shadow-sm rounded-lg grid grid-rows-1 grid-cols-3">
-        <div>
+    <div className="bg-primary w-full h-fit drop-shadow-lg rounded-lg flex flex-row gap-10 m-3">
+        <div className="w-fit h-fit">
           <LeftSidebar />
         </div>
-        <div>
+        <div className="px-14 border-[0.02rem] mt-4 w-fit h-fit">
           <Contents />  
         </div>
-        <div>
+        <div className="w-fit h-fit">
           <RightSidebar />
         </div>
     </div>
