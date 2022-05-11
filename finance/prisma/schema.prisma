@@ -11,17 +11,17 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Earnings{
+model Earning{
   id String @id @default(auto()) @map("_id") @db.ObjectId
   value Int
 }
 
-model Goals{
+model Goal{
   id String @id @default(auto()) @map("_id") @db.ObjectId
-  value Int
+  value Float
 }
 
-model Spendings{
+model Spending{
   id String @id @default(auto()) @map("_id") @db.ObjectId
   value Int
 }
