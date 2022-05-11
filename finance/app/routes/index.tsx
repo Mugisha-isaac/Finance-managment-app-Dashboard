@@ -8,7 +8,7 @@ export default function Index() {
         <div className="w-fit h-fit">
           <LeftSidebar />
         </div>
-        <div className="px-14 border-[0.02rem] mt-4 w-fit h-fit">
+        <div className="px-14 border-l-[0.02rem]  w-fit h-fit">
           <Contents />  
         </div>
         <div className="w-fit h-fit">

@@ -1,7 +1,7 @@
 import {AiOutlineHome,AiOutlineUser,AiOutlineSend,AiOutlineHistory,AiOutlineSetting} from 'react-icons/ai';
 import {BsChat,BsStar,BsFillPlusSquareFill,BsArrowDownUp} from 'react-icons/bs'
 
-function LeftSidebar(){
+const  LeftSidebar =()=>{
     return(
         <div>
            <div className="flex flex-col gap-y-5 text-xl mt-20 ml-5">

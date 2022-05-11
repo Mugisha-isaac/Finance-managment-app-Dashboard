@@ -11,7 +11,8 @@ module.exports = {
         orange: '#FFC994',
         primary_green: '#9CCEA6',
         secondary_green: '#BBECFF',
-        black: '#D3D3D3'
+        black: '#000000',
+        tertiary_green:"#F0F3DE"
       }
     },
   },
