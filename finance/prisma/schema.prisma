@@ -1,0 +1,32 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["mongodb"]
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Earnings{
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  value Int
+}
+
+model Goals{
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  value Int
+}
+
+model Spendings{
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  value Int
+}
+
+model SpendingGoal{
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  value Int
+}

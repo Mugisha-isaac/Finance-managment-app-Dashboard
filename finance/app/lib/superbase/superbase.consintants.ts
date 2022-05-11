@@ -120,6 +120,3 @@ export interface ICardInfo{
 
 
 
-
-
-
