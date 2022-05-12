@@ -38,7 +38,7 @@ const Contents = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-blue-700 px-28 ml-16  mt-10 rounded-lg relative">
+                <div className="bg-orange px-28 ml-16  mt-10 rounded-lg relative opacity-100">
                     {
                         cardData.map((card)=>(
                             <div key={card.id}>
