@@ -1,6 +1,6 @@
 module.exports = {
-  mode:'jit',
-  content: ["./app/**/*.{ts,tsx,jsx,js}"],
+  purge: ["./app/**/*.{ts,tsx,jsx,js}"],
+  content:[],
   theme: {
     extend: {
       colors:{
@@ -12,9 +12,10 @@ module.exports = {
         primary_green: '#9CCEA6',
         secondary_green: '#BBECFF',
         black: '#000000',
-        tertiary_green:"#F0F3DE"
+        tertiary_green:"#F0F3DE"  
       }
     },
   },
+  variants:{},
   plugins: [],
 }

@@ -13,7 +13,7 @@ const Contents = () => {
                 />
                 <p className="text-lg font-bold">Good Evening Shakir!</p>
             </div>
-            <div className='flex flex-row'>
+            <div className='flex flex-row  w-[16rem] mt-3 whitespace-pre'>
                 <div>
                     <div className="flex flex-row gap-3">
                         <div className="bg-primary_green w-14 h-14  grid place-items-center  mt-10 rounded-lg">
@@ -38,7 +38,7 @@ const Contents = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-red-500 w-9 h-11">
+                <div className="bg-blue-700 px-28 ml-16  mt-10 rounded-lg relative">
                     {
                         cardData.map((card)=>(
                             <div key={card.id}>
