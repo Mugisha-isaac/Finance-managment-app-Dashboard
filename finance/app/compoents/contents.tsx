@@ -6,7 +6,8 @@ import Card from './card';
 
 const Contents = () => {
     return (
-        <div className="py-3">
+        <div className="py-3 grid grid-rows-1 grid-cols-2">
+            <div className=''>
             <div className="flex flex-row gap-3  ">
                 <img src="https://deeplearningindaba.com/wp-content/uploads/2019/07/ShakirMohamed_S.2e16d0ba.fill-520x520_y0fw9zH-332x216.jpg" alt="profile"
                     className="h-12 w-12 rounded-full"
@@ -48,7 +49,19 @@ const Contents = () => {
                     }
                 </div>
             </div>
-
+            </div>  
+            <div className=' ml-60'>
+                <div className='flex flex-row'>
+                   
+                <p className='ml-10'>Choose Account</p>
+                    <select name="" id="" className='w-36 rounded-lg py-1 focus:outline-none px-5 bg-gray-100'>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                    </select>
+                  
+                </div>
+            </div>
+            
         </div>
     )
 }
