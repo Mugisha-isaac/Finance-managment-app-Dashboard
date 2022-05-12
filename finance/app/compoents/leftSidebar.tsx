@@ -1,7 +1,8 @@
+import type { FunctionComponent } from 'react';
 import {AiOutlineHome,AiOutlineUser,AiOutlineSend,AiOutlineHistory,AiOutlineSetting} from 'react-icons/ai';
 import {BsChat,BsStar,BsFillPlusSquareFill,BsArrowDownUp} from 'react-icons/bs'
 
-const  LeftSidebar =()=>{
+const  LeftSidebar:FunctionComponent<{}> =()=>{
     return(
         <div>
            <div className="flex flex-col gap-y-5 text-xl mt-20 ml-5">
