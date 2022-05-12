@@ -1,6 +1,6 @@
 
 import { cardData } from 'data';
-import { AiOutlineRise } from 'react-icons/ai'
+import { AiOutlineRise, AiOutlineFall } from 'react-icons/ai'
 import { AiOutlineAppstore } from 'react-icons/ai';
 import Card from './card';
 
@@ -39,7 +39,7 @@ const Contents = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-orange px-28 ml-16  mt-10 rounded-lg relative opacity-100">
+                <div className="bg-orange px-28 ml-16  mt-10 rounded-lg  opacity-100 relative">
                     {
                         cardData.map((card)=>(
                             <div key={card.id}>
@@ -48,20 +48,39 @@ const Contents = () => {
                         ))
                     }
                 </div>
-            </div>
-            </div>  
-            <div className=' ml-60'>
-                <div className='flex flex-row'>
-                   
-                <p className='ml-10'>Choose Account</p>
-                    <select name="" id="" className='w-36 rounded-lg py-1 focus:outline-none px-5 bg-gray-100'>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                    </select>
-                  
+                <div className='w-14 h-14 bg-red-500 '>
+                     
                 </div>
             </div>
-            
+            </div>
+            <div className='flex flex-col'>  
+            <div className=' ml-48 bg-gray-100 w-64 h-10 rounded-lg relative'>
+               <p className='px-5 py-2 text-sm'>Choose Account</p>
+               <div className='bg-primary_blue w-10 h-10  absolute top-0 right-0 '></div>
+            </div>
+            <div className='flex flex-row gap-2'>
+            <div className='w-14 h-14 bg-orange ml-48 mt-16 rounded-lg grid place-items-center'>
+                <div className='w-6 h-6 border-2 border-black rounded-lg grid place-items-center '>
+                     <AiOutlineFall />
+                </div>
+            </div>
+            <div className='mt-16'>
+                    <p>Total Spendings</p>
+                    <p className='font-bold py-1'>$4,596.80</p>
+            </div>
+            </div>
+            <div className='flex flex-row gap-2'>
+            <div className='w-14 h-14 bg-tertiary_blue ml-48 mt-8 rounded-lg grid place-items-center'>
+                    <div className='border-2 border-black w-6 h-6 rounded-lg '>
+                       
+                    </div>
+            </div>
+            <div className='mt-8'>
+                <p>Spending Goal</p>
+                <p className='font-bold py-1'>$6,126.30</p>
+            </div>
+            </div>    
+        </div>
         </div>
     )
 }
