@@ -13,7 +13,8 @@ module.exports = {
         secondary_green: '#BBECFF',
         black: '#000000',
         tertiary_green:"#F0F3DE",
-        tertiary_blue:'#BBECFF'  
+        tertiary_blue:'#BBECFF',
+        primary_gray:'#F3F4F8'  
       }
     },
   },
