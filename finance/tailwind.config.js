@@ -14,7 +14,8 @@ module.exports = {
         black: '#000000',
         tertiary_green:"#F0F3DE",
         tertiary_blue:'#BBECFF',
-        primary_gray:'#F3F4F8'  
+        primary_gray:'#F3F4F8',
+        secondary_yellow:'#FE9E43'  
       }
     },
   },

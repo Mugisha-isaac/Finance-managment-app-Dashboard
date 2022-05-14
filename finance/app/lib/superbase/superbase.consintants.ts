@@ -8,6 +8,11 @@ export interface ICardInfo{
     cvv: number
 }   
 
+export interface IChartInfo{
+    id:number,
+    value:number,
+}
+
 
 
 

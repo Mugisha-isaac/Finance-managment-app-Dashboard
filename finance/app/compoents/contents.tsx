@@ -1,14 +1,14 @@
 
 import { cardData } from 'data';
 import { AiOutlineRise, AiOutlineFall } from 'react-icons/ai'
-import { AiOutlineAppstore } from 'react-icons/ai';
+import { AiOutlineAppstore,AiOutlineCaretDown } from 'react-icons/ai';
 import Card from './card';
 
 const Contents = () => {
     return (
         <div className="py-3 grid grid-rows-1 grid-cols-2">
             <div className=''>
-            <div className="flex flex-row gap-3  ">
+            <div className="flex flex-row gap-3   ">
                 <img src="https://deeplearningindaba.com/wp-content/uploads/2019/07/ShakirMohamed_S.2e16d0ba.fill-520x520_y0fw9zH-332x216.jpg" alt="profile"
                     className="h-12 w-12 rounded-full"
                 />
@@ -64,15 +64,15 @@ const Contents = () => {
                      <AiOutlineFall />
                 </div>
             </div>
-            <div className='mt-16'>
+            <div className='mt-16 whitespace-pre'>
                     <p>Total Spendings</p>
                     <p className='font-bold py-1'>$4,596.80</p>
             </div>
             </div>
             <div className='flex flex-row gap-2'>
             <div className='w-14 h-14 bg-tertiary_blue ml-48 mt-8 rounded-lg grid place-items-center'>
-                    <div className='border-2 border-black w-6 h-6 rounded-lg '>
-                       
+                    <div className='border-2 border-black w-6 h-6 rounded-lg grid place-items-center '>
+                       <AiOutlineCaretDown />
                     </div>
             </div>
             <div className='mt-8'>
