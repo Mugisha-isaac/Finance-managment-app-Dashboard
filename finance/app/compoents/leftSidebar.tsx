@@ -5,7 +5,7 @@ import {BsChat,BsStar,BsFillPlusSquareFill,BsArrowDownUp} from 'react-icons/bs'
 const  LeftSidebar:FunctionComponent<{}> =()=>{
     return(
         <div>
-           <div className="flex flex-col gap-y-5 text-xl mt-20 ml-5">
+           <div className="flex flex-col gap-y-5 text-xl mt-8    ml-5">
                <AiOutlineHome />
                <AiOutlineUser />
                <BsChat />
