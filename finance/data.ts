@@ -72,3 +72,35 @@ export const EtheriumData:IChartInfo[]=[
         value:4400
     }
 ]
+
+
+export const BinanceData:IChartInfo[] =[
+    {
+        id:1,
+        value:2400
+    },
+    {
+        id:2,
+        value:1398
+    },
+    {
+        id:3,
+        value:9800
+    },
+    {
+        id:4,
+        value:3908
+    },
+    {
+        id:5,
+        value:4800
+    },
+    {
+        id:6,
+        value:3800
+    },
+    {
+        id:7,
+        value:4300
+    }
+]
