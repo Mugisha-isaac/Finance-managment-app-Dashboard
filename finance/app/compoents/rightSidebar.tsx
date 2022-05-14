@@ -128,7 +128,7 @@ const RightSidebar = ()=>{
                    <div className='w-10 h-10 bg-secondary_yellow rounded-full grid place-items-center'>
                    <FaEthereum className='text-white text-xl' />
                    </div>
-                   <div className='ml-2'>
+                   <div className='ml-0'>
                      <p>Etherium</p>
                      <p className='opacity-50'>ETH</p>
                    </div>
@@ -141,16 +141,15 @@ const RightSidebar = ()=>{
                 </div>
                 </div>
             
-               </div>  
-
+               </div> 
                <div className='flex flex-row gap-8'>
                <div className='flex flex-row mt-3'>
                    <div className='w-10 h-10 bg-black    rounded-full grid place-items-center'>
                    <BsCurrencyBitcoin className='text-white text-xl rotate-[20deg]' />
                    </div>
-                   <div className='ml-2'>
+                   <div className='ml-4'>
                      <p>Bitcoin</p>
-                     <p className='opacity-50'>BNB</p>
+                     <p className='opacity-50'>BTC</p>
                    </div>
                </div>
                  <div className='mt-5 flex flex-row'>
@@ -163,6 +162,7 @@ const RightSidebar = ()=>{
             
                </div>   
            </div>
+           
            
         </div>
     )

@@ -608,6 +608,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 2rem;
 }
 
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
 .flex {
   display: flex;
 }
@@ -873,6 +881,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-secondary_green {
   --tw-bg-opacity: 1;
   background-color: rgb(187 236 255 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .py-6 {
