@@ -6,7 +6,8 @@ import Card from './card';
 
 const Contents = () => {
     return (
-        <div className="py-3 grid grid-rows-1 grid-cols-2">
+        <div className=''>
+            <div  className="py-3 grid grid-rows-1 grid-cols-2">
             <div className=''>
             <div className="flex flex-row gap-3   ">
                 <img src="https://deeplearningindaba.com/wp-content/uploads/2019/07/ShakirMohamed_S.2e16d0ba.fill-520x520_y0fw9zH-332x216.jpg" alt="profile"
@@ -54,7 +55,7 @@ const Contents = () => {
             </div>
             </div>
             <div className='flex flex-col'>  
-            <div className=' ml-48 bg-gray-100 w-64 h-10 rounded-lg relative'>
+            <div className=' ml-[12rem] bg-gray-100 w-64 h-10 rounded-lg relative'>
                <p className='px-5 py-2 text-sm'>Choose Account</p>
                <div className='bg-primary_blue w-10 h-10  absolute top-0 right-0 '></div>
             </div>
@@ -75,11 +76,12 @@ const Contents = () => {
                        <AiOutlineCaretDown />
                     </div>
             </div>
-            <div className='mt-8'>
+            <div className='mt-8 mb-4'>
                 <p>Spending Goal</p>
                 <p className='font-bold py-1'>$6,126.30</p>
             </div>
             </div>    
+        </div>
         </div>
         </div>
     )
