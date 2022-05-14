@@ -6,7 +6,7 @@ const Card:FunctionComponent<{card:ICardInfo}> = ({card:{name,cvv,endingDigits,e
                <div className="">
                  <p className="absolute top-0 right-6 py-6  text-xl font-bold">VISA</p>
                  <div>
-                     <p className="absolute top-2 left-0 text-sm px-4">Name Card</p>
+                     <p className="absolute top-2 left-0 text-sm px-4 opacity-50">Name Card</p>
                      <p className="absolute top-8 left-0 px-4  text-sm font-bold">{name}</p>
                      <div className="flex flex-row absolute top-[4.3rem] left-0 px-4 gap-2">
                      <p className=" text-xl font-bold">.... .... ....</p>
