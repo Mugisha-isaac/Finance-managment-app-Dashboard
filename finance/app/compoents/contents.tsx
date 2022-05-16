@@ -1,10 +1,16 @@
 
 import { cardData } from 'data';
+import { useState } from 'react';
 import { AiOutlineRise, AiOutlineFall } from 'react-icons/ai'
 import { AiOutlineAppstore,AiOutlineCaretDown } from 'react-icons/ai';
 import Card from './card';
 
+
 const Contents = () => {
+
+   const [active,setActive] = useState<boolean>(false)
+   const  [styles,setStyles] = useState<string>('opacity-50');
+
     return (
         <div className=''>
             <div  className="py-3 grid grid-rows-1 grid-cols-2">
@@ -83,6 +89,12 @@ const Contents = () => {
             </div>    
         </div>
         </div>
+         <hr className='mt-5' />
+         <div className='grid grid-rows-1 grid-cols-3 py-8'>
+            <a href="#" className='opacity-50' onClick={()=>{setActive(true), setStyles('font-bold')}}>ACTIVITY SUMMARY</a>
+            <a href="#" className='opacity-50'>SPENDING SUMMARY</a>
+            <a href="#" className='opacity-50'>INCOME   SUMMARY</a>
+         </div>
         </div>
     )
 }

@@ -7,7 +7,7 @@ import LineChartComponent from '~/utils/linechart'
 
 const RightSidebar = ()=>{
     return(
-        <div className="bg-primary_gray w-[21rem] h-fit mt-6 whitespace-pre">
+        <div className="bg-primary_gray w-[25rem] h-fit mt-6 whitespace-pre grid place-items-center  ">
            <div className="grid grid-rows-1 grid-cols-2 ml-5 mt-3 ">
              <div className=" w-40">
                  <p className="font-bold text-lg">Orizon Crypto</p>
@@ -128,7 +128,7 @@ const RightSidebar = ()=>{
                    <div className='w-10 h-10 bg-secondary_yellow rounded-full grid place-items-center'>
                    <FaEthereum className='text-white text-xl' />
                    </div>
-                   <div className='ml-0'>
+                   <div className='ml-2'>
                      <p>Etherium</p>
                      <p className='opacity-50'>ETH</p>
                    </div>

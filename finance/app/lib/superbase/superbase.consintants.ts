@@ -1,3 +1,4 @@
+import { IconType } from "react-icons"
 
 
 export interface ICardInfo{
@@ -13,6 +14,12 @@ export interface IChartInfo{
     value:number,
 }
 
+export interface IRoute{
+    url?:string,
+    setUrl:Function,
+    name?:string
+}
+    
 
 
 
