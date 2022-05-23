@@ -2,20 +2,21 @@ import React,{PropsWithChildren, useEffect, useState} from 'react'
 import {IRoute} from '../lib/superbase/superbase.consintants';
 
 
-const ActiveRoute = ({url,setUrl,name}:PropsWithChildren<IRoute>)=>{
-    return(
-            url===name ?(
-                <a>
-                   <span onClick={()=>setUrl(name)} className="font-bold">{name}</span>
-                </a>
-            ):null
+const ActiveRoute = ({url,setUrl,name,route}:PropsWithChildren<IRoute>)=>{
+
+const handleOnclickEvents = ()=>{
+    setUrl(name);
+}
+
+    return (
+        url === name ? (
+            <a href={route} className="bg-red-500">
+                <span onClick={()=>handleOnclickEvents}>{url}</span>
+            </a>
+        ):
+        <a>{url}</a>
     )
 }
 
 
-function Navigation(){
-    const [activeUrl,setActiveUrl] = useState<string>();
-    useEffect(()=>{
-        if(activeUrl ==='')
-    })
-}
+export default ActiveRoute; 

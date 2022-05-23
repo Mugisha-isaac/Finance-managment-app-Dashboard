@@ -1,15 +1,24 @@
 
 import { cardData } from 'data';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { AiOutlineRise, AiOutlineFall } from 'react-icons/ai'
 import { AiOutlineAppstore,AiOutlineCaretDown } from 'react-icons/ai';
 import Card from './card';
+import ActiveRoute from '../compoents/route';
 
 
 const Contents = () => {
 
-   const [active,setActive] = useState<boolean>(false)
-   const  [styles,setStyles] = useState<string>('opacity-50');
+   const [url,setUrl] = useState<string>('ACTIVITY SUMMARY');
+   const [clicked,setClicked] = useState<boolean>(false);
+   const [activity,setActivity] = useState<string>('activity+summary')   
+
+    useEffect(()=>{
+      if(activity === 'activity+summary') setUrl('ACTIVITY SUMMARY');
+      if(activity === 'income+summary') setUrl('INCOME   SUMMARY');
+      if(activity === 'spendings+summary') setUrl('SPENDING SUMMARY');
+    },[])
+   
 
     return (
         <div className=''>
@@ -90,10 +99,31 @@ const Contents = () => {
         </div>
         </div>
          <hr className='mt-5' />
-         <div className='grid grid-rows-1 grid-cols-3 py-8'>
-            <a href="#" className='opacity-50' onClick={()=>{setActive(true), setStyles('font-bold')}}>ACTIVITY SUMMARY</a>
-            <a href="#" className='opacity-50'>SPENDING SUMMARY</a>
-            <a href="#" className='opacity-50'>INCOME   SUMMARY</a>
+         <div className='grid grid-rows-1 grid-cols-3 py-8 mt-2'>
+           <a href="#" >
+               ACTIVITY SUMMARY
+           </a>
+
+             {/* <div onClick={()=>setActive(!active)} className=''>
+             <a href="#"  className={active ? 'hidden   ': 'opacity-50'}>SPENDING SUMMARY</a>        
+                 {
+                     active && (
+                        <ActiveRoute url='SPENDING SUMMARY' name='SPENDING SUMMARY' setUrl={()=>'SPENDING SUMMARY'} />
+                     )
+                 }
+                  
+             </div> */}
+
+             {/* <div onClick={()=>setActive(!active)} className=''>
+             <a href="#"  className={active ? 'hidden   ': 'opacity-50'}>SPENDING SUMMARY</a>        
+                 {
+                     active && (
+                        <ActiveRoute url='INCOME   SUMMARY' name='INCOME   SUMMARY' setUrl={()=>'INCOME   SUMMARY'} />
+                     )
+                 }
+                  
+             </div> */}
+             
          </div>
         </div>
     )

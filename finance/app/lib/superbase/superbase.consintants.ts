@@ -16,8 +16,9 @@ export interface IChartInfo{
 
 export interface IRoute{
     url?:string,
-    setUrl:Function,
-    name?:string
+    setUrl?:Function,
+    name?:string,
+    route?:string
 }
     
 
